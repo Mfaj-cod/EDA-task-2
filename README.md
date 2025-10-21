@@ -78,22 +78,7 @@ Pclass ↔ Fare: -0.55 → Expected (higher class = higher fare).
 
 SibSp ↔ Parch: +0.41 → Passengers with siblings/spouses often also had parents/children aboard.
 
-4. Data Quality and Outliers
-
-The Box Plot of Numerical Features highlights distribution and outliers across: Pclass, Age, SibSp, Parch, and Fare.
-
-| Feature           | Observation                                                                       |
-| ----------------- | --------------------------------------------------------------------------------- |
-| **Pclass**        | No outliers — only 3 valid values (1, 2, 3).                                      |
-| **Age**           | A few outliers among older passengers.                                            |
-| **SibSp & Parch** | Outliers exist — passengers with large families aboard.                           |
-| **Fare**          | Highly skewed with extreme outliers (>500) — few passengers paid very high fares. |
-
-✅ Conclusion:
-
 Fare is the most problematic variable — should be log-transformed or robust-scaled.
-
-Age, SibSp, and Parch contain smaller but notable outliers.
 
 🧾 Summary
 
